@@ -68,6 +68,11 @@ nav {
     background-color: #ccd5ae;
     border-radius: 25px;
     overflow: hidden; 
+    margin:70px;
+}
+
+p{
+    padding: 5px;
 }
 
 h2 {
@@ -78,6 +83,20 @@ h2 {
     border-radius: 25px 25px 0 0; 
 }
 
+.resources{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1.5px solid;
+    background-color: #ccd5ae;
+    border-radius: 25px;
+    overflow: hidden; 
+    margin:70px;
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
