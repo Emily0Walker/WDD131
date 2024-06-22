@@ -1,0 +1,113 @@
+/*Navigation bar*/
+
+header {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    background-color: #68a357;
+}
+
+body{
+    background-color: #e9edc9;
+}
+
+.logo img {
+    display: flex;
+    align-self: flex-start;
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+
+h1 {
+    display:flex; 
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+}
+
+.navigation li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    display: block;
+    color: var(--nav-link-color);
+    padding: 20px;
+    text-decoration: none;
+    
+}
+
+/*Image formating*/
+
+div.gallery {
+  display: flex;
+  justify-content: space-around;
+  padding: 2px;
+  text-align: center; /* Add this line */
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 275px;
+  height: auto;
+  display: block; /* Add this line */
+  margin: 0 auto; /* Add this line */
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
