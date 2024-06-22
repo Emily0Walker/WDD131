@@ -50,64 +50,26 @@ nav {
     
 }
 
-/*Image formating*/
-
 div.gallery {
-  display: flex;
-  justify-content: space-around;
-  padding: 2px;
-  text-align: center; /* Add this line */
+  margin: 5px;
+  float: left;
+  width: 180px;
+  
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
 
 div.gallery img {
-  width: 275px;
+  width: 100%;
   height: auto;
-  display: block; /* Add this line */
-  margin: 0 auto; /* Add this line */
 }
 
 div.desc {
-  padding: 10px;
+  padding: 15px;
   text-align: center;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-
-
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
-  background: white;
-  cursor: pointer;
+figure{ 
+  padding: 2px 2px 2px 2px;
+  margin: 3px;
+  border: 1px solid#777;
 }
