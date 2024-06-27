@@ -63,3 +63,17 @@ footer {
     display: flex;
     align-self: center;
 }
+
+.image-container {
+    max-width: 100%; /* Ensures the image does not exceed its container's width */
+    margin: 0 auto; /* Centers the container horizontally */
+    text-align: center; /* Centers the image within the container */
+}
+
+.image-container img {
+    max-width: 100%; /* Makes sure the image does not exceed its natural size */
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    display: block; /* Ensures the image is displayed as a block element */
+    border-radius: 8px; /* Adds rounded corners to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+}
