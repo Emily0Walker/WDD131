@@ -11,34 +11,71 @@ header {
     border-bottom: 3px solid #b7c884;
     width: 100%;
     background-color: #ac6958;
-    height: 90px;
+    height: 75px;
     padding: 0;
     margin: 0;
+    z-index: 1;
 }
+
 
 h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     color: #fff;
-    line-height: 35px;
+    line-height: .125 em;
     margin: 0;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
-h2 {   
-    line-height: 1px;
+h2 {
+    line-height: .25em;
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     color: #fff;
     margin: 0;
     padding: 0;
+}
+
+.top-image {
+    display: flex;
+    justify-content: center;  /* Centers the image horizontally */
+    align-items: center;      /* Centers the image vertically */
+    height: 95px;            /* Makes the container take the full height of the viewport */
+    margin-top: 50px;        /* Resets any default margin */
+    z-index: -1;
+
+}
+
+.second-image {
+    margin-top: 0px; 
+    max-width: 100%;          /* Ensures the image scales properly */
+    height: auto;             /* Maintains the image aspect ratio */
+}
+
+h3 {
+    text-align: center;
+    line-height: .5em;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px; /* Adjust spacing between data boxes */
 }
 
 .data-box {
     border: 1px solid #000;
-    width: 200px;
-    height: 190px;
+    background-color: #fff;
+    height: 200px;
+    width: 211px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    padding: 10px;
+    margin: 10px;
 }
 
 .data-box p {
@@ -46,34 +83,17 @@ h2 {
     line-height: 1.5rem;
 }
 
-h3 {
-    text-align: center;
-}
 
-footer {   
-    margin: 0;
+footer {
+    margin-top: auto;
     width: 100%;
     background-color: #b7c884;
-    padding: 1px 1px 1px 1px;
-    text-align: left; 
-    margin-top: auto;
+    padding: 10px;
+    text-align: left;
     color: #000;
 }
+
 .cloud {
-    display: flex;
-    align-self: center;
-}
-
-.image-container {
-    max-width: 100%; /* Ensures the image does not exceed its container's width */
-    margin: 0 auto; /* Centers the container horizontally */
-    text-align: center; /* Centers the image within the container */
-}
-
-.image-container img {
-    max-width: 100%; /* Makes sure the image does not exceed its natural size */
-    height: auto; /* Ensures the image maintains its aspect ratio */
-    display: block; /* Ensures the image is displayed as a block element */
-    border-radius: 8px; /* Adds rounded corners to the image */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+    display: block;
+    margin: 0 auto;
 }
