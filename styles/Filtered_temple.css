@@ -5,19 +5,20 @@ header {
   display: grid;
   grid-template-columns: 100px 1fr 2fr; 
   align-items: center;
-  border-bottom: 1px solid #ccc;
   width: 100%;
+  border:5px solid #68a357;
   background-color: #68a357;
-  height: fit-content;
-  padding: 0;
+  height: 90px;
+  padding: 0px;
+  margin:0px;
 }
 
 
 .logo img {
   display: flex;
   align-self: flex-start;
-  margin: 0 0.25rem 0 1rem;
-  width: 128px;
+  margin: 1px;
+  width: 192px;
   height: auto;
 }
 
@@ -41,7 +42,6 @@ nav {
   width: 100px;
   display: block;
   color: #000;
-  padding: 8px;
   text-decoration: none;
   text-align: center;
 }
@@ -54,20 +54,40 @@ nav {
 /*gallery*/
 .gallery {
   max-width: 1200px;
-  margin: 0 auto; 
+  margin: 0 auto ; 
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
+  padding: 15px ;
 }
 
 .gallery figure {
-  margin: 10px;
+  margin: 8px;
   text-align: center;
+
 }
 
 .gallery img {
   display: block;
   max-width: 100%;
   height: 245px;
-  border-radius: 5px;
+  border-radius: 2px;
+  padding:1px;
+}
+
+figure{
+  border: solid #f2f2f2 2px ;
+  padding:  17px 14px 2px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.025), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+h3{
+  text-align: left;
+  padding: 0 15px;
+}
+
+p{
+  text-align: left;
+  padding: 0 15px;
 }
