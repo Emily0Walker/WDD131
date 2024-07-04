@@ -10,6 +10,9 @@
     padding: 0px;
     margin:0px;
   }
+  h1{
+    font-weight: 700;
+  }
 
   .logo img {
     display: flex;
@@ -51,15 +54,15 @@
   }
 
   #Hambutton {
-    background: none;
+    background: #68a357;
     border: none;
-    color: white;
+    color: #000;
     font-size: 24px;
     cursor: pointer;
   }
 
   #Hambutton.active {
-    background: none;
+    background: pink;
     border: none;
     color: white;
     font-size: 24px;
