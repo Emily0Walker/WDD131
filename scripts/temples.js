@@ -10,7 +10,7 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+    "https://churchofjesuschrist.org/imgs/352468c0460e400281f169cc322ce2fc4c9c9a9f/full/320%2C/0/default"
   },
   {
     templeName: "Lima Perú",
