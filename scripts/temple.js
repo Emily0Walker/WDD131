@@ -8,7 +8,6 @@ function toggleActive(element) {
   element.classList.toggle('active');
 }
 
-
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -16,7 +15,7 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-    "https://churchofjesuschrist.org/imgs/352468c0460e400281f169cc322ce2fc4c9c9a9f/full/320%2C/0/default"
+      "https://churchofjesuschrist.org/imgs/352468c0460e400281f169cc322ce2fc4c9c9a9f/full/320%2C/0/default"
   },
   {
     templeName: "Lima Perú",
@@ -84,6 +83,31 @@ const temples = [
   },
 ];
 
-createTempleCard();
+function createTempleCard() {
+  temples.forEach(temple => {
+    let card = document.createElement("section");
+    let name = document.createElement("h3");
+    let location = document.createElement("p");
+    let dedication = document.createElement("p");
+    let area = document.createElement("p");
+    let img = document.createElement("img");
 
-function createTempleCard() {}
+    name.textContent = temple.templeName;
+    location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+    dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+    area.innerHTML = `<span class="label">Area:</span> ${temple.area}`;
+    img.setAttribute("src", temple.imageUrl);
+    img.setAttribute("alt", `${temple.templeName} Temple`);
+    img.setAttribute("loading", "lazy");
+
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedication);
+    card.appendChild(area);
+    card.appendChild(img);
+
+    document.querySelector(".gallery").appendChild(card);
+  });
+}
+
+createTempleCard();
