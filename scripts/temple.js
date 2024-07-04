@@ -1,6 +1,12 @@
 const hambutton = document.querySelector('#Hambutton');
-hambutton.addEventListener('click', () => { });
-function toggleActive(element) { }
+
+hambutton.addEventListener('click', () => {
+  toggleActive(hambutton);
+});
+
+function toggleActive(element) {
+  element.classList.toggle('active');
+}
 
 
 const temples = [
@@ -76,9 +82,6 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
   },
-
-
-  // Add more temple objects here...
 ];
 
 createTempleCard();
