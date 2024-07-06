@@ -2,6 +2,7 @@
 {
     text-align: center;
     margin: 0;
+    justify-content: center;
 }
 
 body {
@@ -65,7 +66,7 @@ h3 {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    gap: 20px; /* Adjust spacing between data boxes */
+    gap: 400px; /* Adjust spacing between data boxes */
 }
 
 .data-box {
@@ -94,5 +95,7 @@ footer {
 }
 
 .cloud {
-    display: block;
+    display: flex;
+    align-self: center;
+
 }
