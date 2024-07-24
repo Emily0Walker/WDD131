@@ -37,7 +37,9 @@
     </main>
 
     <footer>
-        <p>Emily Walker. Last updated: [Insert Date]</p>
+        <p>Emily Walker. Last updated: <script>
+            document.write(new Date(document.lastModified).toLocaleString());
+        </script> </p>
     </footer>
 </body>
 
